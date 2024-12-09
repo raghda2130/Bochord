@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- custom syles -->
+     <style>
+      body{
+        background-color: #fafafa;
+      }
+      #story{
+        background-color: #fff;
+        margin: auto;
+        border: 1px solid #dbdbdb;
+        height: 110px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+      }
+      .story{
+        border-radius: 50%;
+      }
+      .story-container ul{
+        list-style-type: none;
+        display: flex;
+        overflow: auto;
+        padding: 20px;
+      }
+      .story-container ul li{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .story-container ul li .story{
+        padding: 2px;
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2355 75%,
+          #bc1888 100%
+        );
+      }
+     
+
+
+     </style>
+  </head>
+  <body>
+  <header>
+    <!-- Start your project here-->
+     <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body-tertiary ">
+  <!-- Container wrapper -->
+  <div class="container ">
+    <!-- Navbar brand -->
+
+    <!-- Toggle button -->
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+     <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <a class="navbar-brand" href="#">
+            <img
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/150px-Instagram_logo.svg.png"
+             height="30"
+             alt=""
+             loading="lazy"
+             />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search"
+            />
+        </div>
+        <div class="col-md-3">
+          <ul class="navbar-nav justify-content-center">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="fas fa-house fa-lg text-dark"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="fas fa-paper-plane fa-lg text-dark"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="far fa-compass fa-lg text-dark"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="far fa-heart fa-lg text-dark"></i>
+              </a>
+            </li>
+            <!-- Avatar -->
+      <li class="nav-item dropdown">
+        <a
+          data-mdb-dropdown-init
+          class="nav-link dropdown-toggle d-flex align-items-center"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          aria-expanded="false"
+        >
+          <img
+            src="WhatsApp Image 2024-12-05 at 13.25.53_3fa67c8f.jpg"
+            class="rounded-circle"
+            height="22"
+            alt="Portrait of a Woman"
+            loading="lazy"
+          />
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="instgram_profile.html">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="/instgram_logout.html">Logout</a>
+          </li>
+        </ul>
+      </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+     </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+</h
+
+eader>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- main -->
+<main>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <!-- section#1 -->
+        <!-- stories -->
+        <section class="story-container" id="story" >
+          <ul>
+            <li>
+              <div class="story">
+                <img
+            src="d8f4516a6f4fd0a08c57921a088e9c3e.png"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Asmaa</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="images (2).jpeg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Hour</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="profile 2.jpg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Sara</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="42b4bad7c6848a43cae7ec7b1d6abe761.jpg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Salwa</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="3539b5c56a8b49fb14db6d93bd95cb11.jpg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Rawda</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="images.jpeg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Heba</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="648862dd6731acdd28ff103c2a233787.jpg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Maryam</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="images (1).jpeg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Marya</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="6453e84ea6a6431be9df993d09da95fd.webp"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Noor</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="download.webp"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Doaa</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="868709b51df599c57300a6a1150c249b1.jpg"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Aya</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="كلمات-دينية-1.webp"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Eman</span>
+            </li>
+            <li>
+              <div class="story">
+                <img
+            src="اعظم-صور-دينية-22.webp"
+            class="rounded-circle"
+            height="50"
+            alt="Avatar"
+          />
+              </div>
+              <span>Alaa</span>
+            </li>
+          </ul>
+        </section>
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+         <!-- section#2 -->
+        <section class="posts my-5">
+          <div class="post">
+            <div class="card">
+              <!-- start post#1 -------------------------------------------------------------------->
+              <div class="card-body">
+                <div class="container">
+                  <!-- Auther -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="d-flex story">
+                        <img
+                        src="WhatsApp Image 2024-12-05 at 13.25.53_3fa67c8f.jpg"
+                        class="rounded-circle"
+                        height="40"
+                        alt="Avatar"
+                        />
+                        <div class="mt-2" >
+                          <a href="" class="text-dark"></a>
+                            <strong class="mt-5 ms-2"> Bochord</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="fas fa-ellipsis-h fa-lf mt-2 float-end "></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="bg-image hover-overlay shadow-1-strong rounded-0"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="light"
+            >
+              <img src="WhatsApp Image 2024-12-01 at 15.04.16_2cf21a63.jpg" class="w-100" alt="Louvre" />
+              <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+              </div>
+              <!-- post#1 containe ------------------------------------------------------>
+               <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="far fa-paper-plane fa-lg"></i>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="far fa-bookmark fa-lf mt-2 float-end"></i>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-md-8 mt-1">
+                      <img
+                      src="images (2).jpeg"
+                      class="rounded-circle"
+                      height="20"
+                      alt="Avatar"
+                      />
+                      <small>Liked by <strong>Hour</strong> and <strong>100,000</strong>others</small>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              <!-- end post#1 ---------------------------------------------------------------------->
+              <!-- start post#2 -------------------------------------------------------------------->
+                <div class="card-body">
+                  <div class="container">
+                    <!-- Auther -->
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="d-flex story">
+                          <img
+                          src="WhatsApp Image 2024-12-05 at 13.25.53_3fa67c8f.jpg"
+                          class="rounded-circle"
+                          height="40"
+                          alt="Avatar"
+                          />
+                          <div class="mt-2" >
+                            <a href="" class="text-dark"></a>
+                              <strong class="mt-5 ms-2"> Bochord</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <i class="fas fa-ellipsis-h fa-lf mt-2 float-end "></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div
+              class="bg-image hover-overlay shadow-1-strong rounded-0"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="light"
+            >
+              <img src="WhatsApp Image 2024-12-01 at 15.04.16_7c9fe8c9.jpg" class="w-100" alt="Louvre" />
+              <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+              </div>
+              <!-- post#2 containe ------------------------------------------------->
+               <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="far fa-paper-plane fa-lg"></i>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="far fa-bookmark fa-lf mt-2 float-end"></i>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-md-8 mt-1">
+                      <img
+                      src="d8f4516a6f4fd0a08c57921a088e9c3e.png"
+                      class="rounded-circle"
+                      height="20"
+                      alt="Avatar"
+                      />
+                      <small>Liked by <strong>Asmaa</strong> and <strong>200,000</strong>others</small>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              <!-- end post#2 ---------------------------------------------------------------------->
+              <!-- start post#3 -------------------------------------------------------------------->
+              <div class="card-body">
+                <div class="container">
+                  <!-- Auther -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="d-flex story">
+                        <img
+                        src="WhatsApp Image 2024-12-05 at 13.25.53_3fa67c8f.jpg"
+                        class="rounded-circle"
+                        height="40"
+                        alt="Avatar"
+                        />
+                        <div class="mt-2" >
+                          <a href="" class="text-dark"></a>
+                            <strong class="mt-5 ms-2"> Bochord</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="fas fa-ellipsis-h fa-lf mt-2 float-end "></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="bg-image hover-overlay shadow-1-strong rounded-0"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="light"
+            >
+              <img src="WhatsApp Image 2024-12-01 at 15.04.16_28c22296.jpg" class="w-100" alt="Louvre" />
+              <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+              </div>
+              <!-- post#3 containe ----------------------------------------------->
+               <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="far fa-paper-plane fa-lg"></i>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="far fa-bookmark fa-lf mt-2 float-end"></i>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-md-8 mt-1">
+                      <img
+                      src="868709b51df599c57300a6a1150c249b1.jpg"
+                      class="rounded-circle"
+                      height="20"
+                      alt="Avatar"
+                      />
+                      <small>Liked by <strong>Aya</strong> and <strong>150,000</strong>others</small>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              <!-- end post#3 ------------------------------------------------------------------------->
+              <!-- start post#4 ----------------------------------------------------------------------->
+              <div class="card-body">
+                <div class="container">
+                  <!-- Auther -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="d-flex story">
+                        <img
+                        src="WhatsApp Image 2024-12-05 at 13.25.53_3fa67c8f.jpg"
+                        class="rounded-circle"
+                        height="40"
+                        alt="Avatar"
+                        />
+                        <div class="mt-2" >
+                          <a href="" class="text-dark"></a>
+                            <strong class="mt-5 ms-2"> Bochord</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="fas fa-ellipsis-h fa-lf mt-2 float-end "></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="bg-image hover-overlay shadow-1-strong rounded-0"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="light"
+            >
+              <img src="WhatsApp Image 2024-12-01 at 15.04.17_f289b24a.jpg" class="w-100" alt="Louvre" />
+              <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+              </div>
+              <!-- post#4 containe ------------------------------------------------>
+               <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="far fa-paper-plane fa-lg"></i>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="far fa-bookmark fa-lf mt-2 float-end"></i>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-md-8 mt-1">
+                      <img
+                      src="اعظم-صور-دينية-22.webp"
+                      class="rounded-circle"
+                      height="20"
+                      alt="Avatar"
+                      />
+                      <small>Liked by <strong>Alaa</strong> and <strong>10,000</strong>others</small>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <!-- end post#4 ------------------------------------------------------------------------->
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</main>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
